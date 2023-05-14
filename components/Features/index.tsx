@@ -11,8 +11,8 @@ const Features = () => {
       >
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="See what sets us apart"
+            paragraph="At MerkleTree, our mission is to establish trust and integrity in the digital realm by leveraging the principles of the Merkle Tree data structure. We strive to provide exceptional Software-as-a-Service (SaaS) solutions that prioritize data security, transparency, and reliability. Our business ethos revolves around the following key principles:"
             center
           />
 
