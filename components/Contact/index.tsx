@@ -17,8 +17,13 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
                 <div className="-mx-4 flex flex-wrap">
+                  <p className="hidden">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </p>
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
@@ -65,6 +70,7 @@ const Contact = () => {
                       ></textarea>
                     </div>
                   </div>
+                  <div data-netlify-recaptcha="true"></div>
                   <div className="w-full px-4">
                     <button className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
                       Submit Ticket
