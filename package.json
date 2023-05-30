@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='-r @newrelic/next' next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_OPTIONS='-r @newrelic/next' next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@newrelic/next": "^0.5.1",
     "@next/font": "13.1.6",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "newrelic": "^10.1.2",
     "next": "13.1.6",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
